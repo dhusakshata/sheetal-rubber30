@@ -1,0 +1,153 @@
+/* Main container styling */
+.facility-container3 {
+  padding: 20px;
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+  color: black;
+}
+/* Uppercase for all headings and bold text */
+h1, h2, h3, h4, b {
+  text-transform: uppercase;
+}
+
+
+.facility-header3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.facility-header3 h1 {
+  font-size: 2.5rem;
+  color: black;
+  border-bottom: 3px solid #f28c38;
+  display: inline-block;
+  padding-bottom: 10px;
+  animation: slideDown 1s ease-in-out;
+}
+/* Animation for the header */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Paragraph Section */
+.facility-paragraph3 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.facility-image3 {
+  flex: 1;
+  text-align: center;
+}
+
+.facility-image3 img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.facility-paragraph3 p {
+  flex: 2;
+  font-size: 1rem;
+  line-height: 1.6;
+  color:black;
+}
+
+/* Content Overview Styling */
+.facility-content3 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.facility-content3 h1 {
+  font-size: 2rem;
+  text-align: center;
+  color: black;
+  margin-bottom: 10px;
+  
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+/* Info Box Styling */
+.info-boxe3 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  background-color: #fdfdfd;
+  border: 2px solid #f28c38;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-boxe3:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.info-boxe3 h2 {
+  font-size: 1.5rem;
+  color: #f28c38;
+  margin-bottom: 10px;
+}
+
+.info-boxe3 p,
+.info-boxe3 ul {
+  font-size: 1rem;
+  color:black;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.info-boxe3 ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.info-boxe3 ul li {
+  margin-bottom: 10px;
+}
+
+.info-boxe3 ul li b {
+  color: #f28c38;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .facility-paragraph3 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .facility-paragraph3 p {
+    font-size: 0.95rem;
+  }
+
+  .facility-header3 h1 {
+    font-size: 2rem;
+  }
+
+  .info-boxe3 h2 {
+    font-size: 1.3rem;
+  }
+}
